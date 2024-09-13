@@ -1,0 +1,240 @@
+
+@import "flexBox.css";
+@import "font.css";
+@import "spacing.css";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+
+
+:root {
+  --font-size-basic: 16px;
+  --root-spacing: 16px;
+}
+h1, h2, h3, h4, h5, h6, p, ul, ol, li {
+  line-height: 1.6;
+}
+a {
+  text-decoration: none;
+}
+
+.container-1024{
+  width: 1024px;
+  margin: 0 auto;
+}
+.clearfix {
+  overflow: auto;
+}
+/*----   top-bar-head   ----*/
+.fan-club {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #f6f6f6;
+}
+.fan-club li:last-of-type{
+  margin-left: 37px;
+}
+.fan-club li:first-of-type a {
+  position: relative;
+  color: #4460a0;
+  /* float: left; */
+}
+.fan-club li:first-of-type a::before {
+  content:"";
+  position: absolute;
+  left:-20px;
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/facebookIcon.png);
+  background-position: center center; 
+}
+.fan-club li:last-of-type a {
+  position: relative;
+  color: #00aaec;
+}
+.fan-club li:last-of-type a::before {
+  content:"";
+  position: absolute;
+  left:-20px;
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/twitterIcon.png);
+  background-position: center center; 
+}
+
+/*----   top-bar-body   ----*/
+.top-bar-body {
+  padding: 20px 0px 20px 16px;
+}
+.contact li a {
+  margin-left: 20px;
+  color: #00cc99;
+  padding: 0 16px;
+  padding-bottom: 23px;
+  position: relative;
+}
+.contact a { 
+  border-bottom: 4px solid transparent;
+}
+.contact a:hover {
+  border-bottom: 4px solid #00cc99;
+}
+
+/*----   banner   ----*/
+ .banner {
+  padding: 95px 0px;
+  background-image: url(../images/etudiant-1.jpg );
+  background-position: center center;
+  background-size: cover;
+  
+}
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url('images/photo.jpg');
+  background-size: cover;
+  color: #fff;
+  padding: 40px;
+}
+header h1{
+  font-family: 'Playfair Display', serif;
+  font-size: 50px;
+}
+header h4{
+  margin-top: -20px;
+  font-size: 20px;
+  text-align: center;
+  border-bottom: 1px solid #fff;
+}
+header button{
+  padding: 10px 20px;
+  background-color: #fff;
+  color:#000;
+  border:none;
+  margin-bottom: 30px;
+  outline:none;
+  font-size: 20px;
+  font-family: 'Playfair Display', serif;
+  cursor: pointer;
+}
+.title {
+  padding: 45px 0px 45px 20px;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+.title h1 {
+  color: white;
+}
+
+/*----   about   ----*/
+.about {
+  padding: 65px 20px;
+}
+.card > li{
+  width: 305px;
+  padding: 25px 20px;
+  box-shadow: 4px 4px 5px #ddd;
+  border-radius: 8px;
+}
+.card li h3{
+  text-align: center;
+  color: #444;
+}
+.card li p{
+  color: #444;
+}
+.card li > ul {
+  color: #444;
+  margin-left: 16px;
+}
+.card li > ul li {
+  position: relative;
+}
+.card li > ul li::before {
+  content:"";
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #444;
+  position: absolute;
+  left: -10px;
+  top: 10px;
+}
+.card-photo {
+  height: 140px;
+}
+
+/*----   difference   ----*/
+.difference {
+  margin-bottom: 65px;
+}
+.difference h2 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.difference table {
+  border-collapse: collapse;
+  width: 840px;
+  margin: 0 auto;
+}
+.difference th, .difference td {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+  padding: 10px;
+}
+.difference th {
+  background-color: #f7f7f7;
+  font-weight: 500;
+}
+.difference td span {
+  color: #00a67d;
+}
+
+/*----   form   ----*/
+.form-wrap {
+  background-image: linear-gradient(180deg, #00644b, #009772);
+  padding: 40px 30px 30px 30px;
+}
+.form-wrap h2 {
+  text-align: center;
+  font-weight: 300;
+  color: #fff;
+  margin-bottom: 35px;
+}
+.form-textarea textarea {
+  width: 460px;
+  height: 245px;
+  border: none;
+  border-radius: 2px;
+}
+.form-info label {
+  color: #fff;
+  margin-bottom: 7px;
+}
+.form-info input {
+  width: 460px;
+  height: 30px;
+  margin-bottom: 19px;
+  border: none;
+}
+.form-info input::placeholder {
+  padding-left: 8px;
+}
+.form-info input[type = submit] {
+  margin-left: auto;
+  color: #fff;
+  background-color: #00cc99;
+  width: 70px;
+  border-radius: 2px;
+}
+
+/*----   footer   ----*/
+.footer {
+  padding: 20px 30px;
+}
+.footer ul li a {
+  color: #e54991
+}
+
+
+
